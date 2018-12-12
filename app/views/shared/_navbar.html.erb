@@ -29,7 +29,7 @@
    <% if logged?%>
           <a class="dropdown-item" href="<%= session_path(current_user) %>" data-method="delete">Salir</a>
    <% else %>
-          <a class="dropdown-item" href="#">Ingreso</a>
+          <a class="dropdown-item" href="<%= users_sign_in_path %>">Ingreso</a>
           <a class="dropdown-item" href="<%= users_sign_up_path %>">Registro</a>
         <% end %>
         </div>
